@@ -16,6 +16,11 @@
 			<artifactId>sdk-contract-vm</artifactId>
 			<version>2.0-alpha3</version>
 		</dependency>
+		<dependency>
+			<groupId>io.nuls.offlineContract</groupId>
+			<artifactId>off-smartcontract-api</artifactId>
+			<version>1.2</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -29,6 +34,22 @@
 					<target>1.8</target>
 					<encoding>UTF-8</encoding>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.1.1</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>java</goal>
+						</goals>
+						<configuration>
+							<mainClass>io.nuls.contract.ContractApplication</mainClass>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
