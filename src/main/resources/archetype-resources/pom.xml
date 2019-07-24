@@ -47,6 +47,9 @@
 						</goals>
 						<configuration>
 							<mainClass>io.nuls.contract.ContractApplication</mainClass>
+							<arguments>
+								<argument>${project.build.directory}</argument>
+							</arguments>
 						</configuration>
 					</execution>
 				</executions>
