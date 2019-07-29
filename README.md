@@ -12,15 +12,22 @@
 ### 建立源头
     $mvn clean install
 成功构建maven后，工件将上传到您当地的maven仓库。
+## 配置maven运行参数
+为了解决Intellij IDEA 通过archetype创建Maven项目缓慢的问题，增加maven运行参数：
+-DarchetypeCatalog=internal，操作步骤如下图：
+![](https://i.imgur.com/Ii9AsSy.jpg)
+![](https://i.imgur.com/vuTzGuM.jpg)
 
 ## 创建NULS智能合约项目
-- 点击IntelliJ IDE的菜单：File->New Project
+- 点击IntelliJ IDE的菜单：File->New Project->Maven
+![](https://i.imgur.com/qO06Z0L.jpg)
 - 勾选“Create From archetype”
 - 点击“Add Archetype”，填写：
 
          GroupId：io.nuls
          ArtifactId: nuls-smartcontract-archetype 
          Version: 1.1
+![](https://i.imgur.com/eX2TIl0.jpg)
 - 选择生成的“io.nuls:nuls-smartcontract-archetype",点击下一步，创建NULS智能合约项目
 
 ## 以原型生成的智能合约项目
