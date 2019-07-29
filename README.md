@@ -15,6 +15,7 @@
 ## 配置maven运行参数
 为了解决Intellij IDEA 通过archetype创建Maven项目缓慢的问题，增加maven运行参数：
 -DarchetypeCatalog=internal，操作步骤如下图：
+
 ![](https://i.imgur.com/uL2cEUs.jpg)
 ![](https://i.imgur.com/Wrk4Mg2.jpg)
 
@@ -22,6 +23,7 @@
 - 点击IntelliJ IDE的菜单：File->New Project->Maven，如下图：
 ![](https://i.imgur.com/qO06Z0L.jpg)
 - 勾选“Create From archetype”，点击“Add Archetype”按钮，如下图，填写如下信息，即可生成“io.nuls:nuls-smartcontract-archetype"
+
          GroupId：io.nuls
          ArtifactId: nuls-smartcontract-archetype 
          Version: 1.1
